@@ -51,7 +51,7 @@ import { Vue, ChangeTheme } from 'change-theme-button';
 
 new Vue({
   components: { ChangeTheme }
-}).$mount('body');
+}).$mount('#global-content');
 ```
 
 
