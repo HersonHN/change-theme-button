@@ -1,7 +1,6 @@
 {
   "name": "change-theme-button",
-  "version": "0.1.3",
-  "private": false,
+  "version": "0.1.4",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name changeTheme ./vue/change-theme.vue",
@@ -38,5 +37,15 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "author": {
+    "name": "Herson Salinas",
+    "email": "contact@herson.hn",
+    "url": "https://herson.hn/"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/HersonHN/change-theme-button.git"
+  },
+  "license": "MIT"
 }
