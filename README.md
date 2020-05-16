@@ -62,3 +62,11 @@ There's 3 themes you can use on your website
 - `system-theme`
 - `light-theme`
 - `dark-theme`
+
+## Options
+
+You can add different options to the `<chage-theme>`:
+
+- `icon-name`: change the class of the icon, you can use that to chage the icon to match your site's theme.
+- `set-color-on-load`: (true by default) loads the theme on page load
+- `v-model`: binds the name of the theme to a variable instead of saving it to the localStorage.
