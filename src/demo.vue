@@ -3,13 +3,23 @@
     <h4>Select the type of demo</h4>
     <p>
       <label>
-        <input type="radio" name="type" value="localstorage" v-model="type">
+        <input
+          v-model="type"
+          type="radio"
+          name="type"
+          value="localstorage"
+        >
         <span>Reading / saving from local storage</span>
       </label>
     </p>
     <p>
       <label>
-        <input type="radio" name="type" value="v-model" v-model="type">
+        <input
+          v-model="type"
+          type="radio"
+          name="type"
+          value="v-model"
+        >
         <span>Reading / saving from a custom model</span>
       </label>
     </p>
@@ -31,14 +41,14 @@
   import ChangeTheme from '../vue/change-theme.vue';
   export default {
     name: 'Demo',
+    components: {
+      ChangeTheme
+    },
     data() {
       return {
         type: 'localstorage',
         override: 'system-theme'
       }
-    },
-    components: {
-      ChangeTheme
     }
   }
 </script>

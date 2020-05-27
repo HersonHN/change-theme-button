@@ -2856,12 +2856,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"33a7a956-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/change-theme.vue?vue&type=template&id=373bdac7&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{ref:"parent",staticClass:"change-theme"},[_c('i',{class:_vm.iconName,on:{"click":function($event){_vm.showPopup = !_vm.showPopup}}},[_vm._v(_vm._s(_vm.iconText))]),_c('div',{staticClass:"change-theme-popup",class:{ 'show' : _vm.showPopup }},_vm._l((_vm.themeList),function(t){return _c('div',{key:t.id},[_c('span',{staticClass:"theme-entry bg-color",class:[t.id == _vm.theme ? 'fg-color-border' : ''],on:{"click":function($event){return _vm.setTheme(t.id)}}},[_vm._v(" "+_vm._s(t.name)+" ")])])}),0)])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"dcb1d04a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/change-theme.vue?vue&type=template&id=17cd3506&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{ref:"parent",staticClass:"change-theme"},[_c('a',{class:_vm.iconName,attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.showPopup = !_vm.showPopup}}},[_vm._v(_vm._s(_vm.iconText))]),_c('div',{staticClass:"change-theme-popup",class:{ 'show' : _vm.showPopup }},_vm._l((_vm.themeList),function(t){return _c('div',{key:t.id},[_c('button',{staticClass:"theme-entry bg-color",class:[t.id == _vm.theme ? 'fg-color-border' : ''],on:{"click":function($event){$event.preventDefault();return _vm.setTheme(t.id)}}},[_vm._v(" "+_vm._s(t.name)+" ")])])}),0)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./vue/change-theme.vue?vue&type=template&id=373bdac7&
+// CONCATENATED MODULE: ./vue/change-theme.vue?vue&type=template&id=17cd3506&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
 var es_array_find = __webpack_require__("7db0");
@@ -3025,6 +3025,7 @@ function _toConsumableArray(arr) {
 
 
 
+//
 //
 //
 //

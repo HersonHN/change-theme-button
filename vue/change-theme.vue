@@ -3,10 +3,11 @@
     ref="parent"
     class="change-theme"
   >
-    <i
+    <a
+      href="#"
       :class="iconName"
-      @click="showPopup = !showPopup"
-    >{{ iconText }}</i>
+      @click.prevent="showPopup = !showPopup"
+    >{{ iconText }}</a>
 
     <div
       class="change-theme-popup"
@@ -16,13 +17,13 @@
         v-for="t of themeList"
         :key="t.id"
       >
-        <span
+        <button
           class="theme-entry bg-color"
           :class="[t.id == theme ? 'fg-color-border' : '']"
-          @click="setTheme(t.id)"
+          @click.prevent="setTheme(t.id)"
         >
           {{ t.name }}
-        </span>
+        </button>
       </div>
     </div>
   </section>
@@ -160,9 +161,14 @@ export default {
   line-height: 2rem;
   text-align: center;
 }
-.change-theme i {
+
+.change-theme a {
   font-size: 1.5em;
   cursor: pointer;
+  text-decoration: none;
+}
+.change-theme button {
+  color: inherit;
 }
 .change-theme .change-theme-popup {
   display: block;
@@ -183,7 +189,7 @@ export default {
   font-family: sans-serif;
   font-size: 0.7rem;
   display: block;
-  padding: 0.2rem;
+  padding: 0.2rem .5rem;
   margin: 0 0 0.25rem 0;
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 3px;
