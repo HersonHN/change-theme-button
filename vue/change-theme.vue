@@ -190,6 +190,7 @@ export default {
   font-size: 0.7rem;
   display: block;
   padding: 0.2rem .5rem;
+  line-height: 1rem;
   margin: 0 0 0.25rem 0;
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 3px;
