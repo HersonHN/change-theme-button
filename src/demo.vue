@@ -25,12 +25,12 @@
     </p>
     <div v-if="type == 'localstorage'">
       <h2>Example reading / saving from local storage</h2>
-      <change-theme />
+      <change-theme-button />
       <p>On here the value will be "saved" into the localStorage</p>
     </div>
     <div v-if="type == 'v-model'">
       <h2>Example reading / saving from a custom model</h2>
-      <p><change-theme v-model="override" /> Value: {{ override }}</p>
+      <p><change-theme-button v-model="override" /> Value: {{ override }}</p>
       <p>On here the value will be "saved" into the model and not in the localStorage</p>
       <p>This can be usefull if the developer wants to store the theme somewhere else.</p>
     </div>
@@ -38,11 +38,11 @@
 </template>
 
 <script>
-  import ChangeTheme from '../vue/change-theme.vue';
+  import ChangeThemeButton from '../vue/change-theme-button.vue';
   export default {
     name: 'Demo',
     components: {
-      ChangeTheme
+      ChangeThemeButton
     },
     data() {
       return {

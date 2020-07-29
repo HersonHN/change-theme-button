@@ -1,7 +1,7 @@
 <template>
   <section
     ref="parent"
-    class="change-theme"
+    class="change-theme-button"
   >
     <a
       href="#"
@@ -32,7 +32,7 @@
 <script>
 
 export default {
-  name: 'ChangeTheme',
+  name: 'ChangeThemeButton',
   props: {
     iconName: {
       type: String,
@@ -166,7 +166,7 @@ export default {
 <style>
 @import './vendor/fontello.css';
 
-.change-theme {
+.change-theme-button {
   display: inline-block;
   position: relative;
   width: 2rem;
@@ -175,15 +175,15 @@ export default {
   text-align: center;
 }
 
-.change-theme a {
+.change-theme-button a {
   font-size: 1.5em;
   cursor: pointer;
   text-decoration: none;
 }
-.change-theme button {
+.change-theme-button button {
   color: inherit;
 }
-.change-theme .change-theme-popup {
+.change-theme-button .change-theme-popup {
   display: block;
   width: 3rem;
   line-height: 1rem;
@@ -194,11 +194,11 @@ export default {
   opacity: 0;
   z-index: 1;
 }
-.change-theme .change-theme-popup.show {
+.change-theme-button .change-theme-popup.show {
   visibility: visible;
   opacity: 1;
 }
-.change-theme .theme-entry {
+.change-theme-button .theme-entry {
   font-family: sans-serif;
   font-size: 0.7rem;
   display: block;

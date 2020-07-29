@@ -40,17 +40,17 @@ npm install --save change-theme-button
 ## Calling the Library
 
 ```javascript
-import ChangeTheme from 'change-theme-button/vue/change-theme';
+import ChangeThemeButton from 'change-theme-button';
 ```
 
 
 ## Calling it on Project Without Vue
 
 ```javascript
-import { Vue, ChangeTheme } from 'change-theme-button';
+import { Vue, ChangeThemeButton } from 'change-theme-button/src/lib';
 
 new Vue({
-  components: { ChangeTheme }
+  components: { ChangeThemeButton }
 }).$mount('#global-content');
 ```
 

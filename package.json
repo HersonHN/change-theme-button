@@ -1,14 +1,14 @@
 {
   "name": "change-theme-button",
-  "version": "0.2.4",
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name changeTheme ./vue/change-theme.vue",
+    "build": "vue-cli-service build --target lib --name changeThemeButton ./vue/change-theme-button.vue",
     "lint": "vue-cli-service lint",
     "preversion": "npm run lint",
     "version": "npm run build && npm publish"
   },
-  "main": "src/lib.js",
+  "main": "vue/change-theme-button.vue",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"

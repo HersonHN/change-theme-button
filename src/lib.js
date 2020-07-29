@@ -1,4 +1,4 @@
 import Vue from 'vue/dist/vue.common.js';
-import ChangeTheme from '../dist/changeTheme.umd.js';
+import ChangeThemeButton from '../dist/changeThemeButton.umd.js';
 
-export { Vue, ChangeTheme };
+export { Vue, ChangeThemeButton };
