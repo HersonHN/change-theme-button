@@ -46,10 +46,14 @@ export default {
       type: Boolean,
       default: true
     },
+    target: {
+      type: String,
+      default: ''
+    },
     value: {
       type: String,
       default: ''
-    }
+    },
   },
   data() {
     return {
@@ -111,9 +115,10 @@ export default {
       if (!theme) return;
 
       this.theme = theme;
+      let element = this.getTarget();
       let themes = this.themeList.map(t => t.id);
-      document.body.classList.remove(...themes);
-      document.body.classList.add(theme);
+      element.classList.remove(...themes);
+      element.classList.add(theme);
     },
 
     getTheme() {
@@ -135,7 +140,7 @@ export default {
     },
 
     getDOMTheme() {
-      let classes = document.body.classList;
+      let classes = this.getTarget().classList;
 
       for (let theme of this.themeList) {
         if (classes.contains(theme.id)) {
@@ -143,6 +148,14 @@ export default {
         }
       }
       return '';
+    },
+
+    getTarget() {
+      if (this.target) {
+        return document.querySelector(this.target);
+      }
+
+      return document.body;
     },
 
   },
