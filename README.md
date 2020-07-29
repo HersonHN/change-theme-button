@@ -40,7 +40,7 @@ npm install --save change-theme-button
 ## Calling the Library
 
 ```javascript
-import { ChangeTheme } from 'change-theme-button';
+import ChangeTheme from 'change-theme-button/vue/change-theme';
 ```
 
 
@@ -68,5 +68,6 @@ There's 3 themes you can use on your website
 You can add different options to the `<chage-theme>`:
 
 - `icon-name`: change the class of the icon, you can use that to chage the icon to match your site's theme.
-- `set-color-on-load`: (true by default) loads the theme on page load
+- `set-color-on-load`: (true by default) loads the theme on page load.
+- `target`: (empty by default) Set the `querySelector` for element who will receive the theme class, if empty, the `<body>` will receive it.
 - `v-model`: binds the name of the theme to a variable instead of saving it to the localStorage.
