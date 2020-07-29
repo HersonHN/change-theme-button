@@ -32,7 +32,7 @@
       <h2>Example reading / saving from a custom model</h2>
       <p><change-theme v-model="override" /> Value: {{ override }}</p>
       <p>On here the value will be "saved" into the model and not in the localStorage</p>
-      <p>This can be usefull if the developer want to store the theme somewhere else.</p>
+      <p>This can be usefull if the developer wants to store the theme somewhere else.</p>
     </div>
   </section>
 </template>
